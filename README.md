@@ -1,7 +1,7 @@
 # Challenge-ONE-Encriptador
 Encriptador | Desencriptador de texto, challenge01 del programa HelloOneG5 Oracle + Alura
 
-<div align="center"><img src="https://raw.githubusercontent.com/patrickwebsdev/Encriptador-Oracle-Alura/master/img/one.png" width="200"/></div>
+<div align="center"><img src="https://github.com/AFVA7/Challenge-ONE-Encriptador/blob/main/public/assets/oracle.png?raw=true" width="200"/></div>
 
 # 🚀 Challenge Encriptador | Oracle + Alura
 <p align="center" >
