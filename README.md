@@ -52,4 +52,4 @@ La página web cuenta con campos para que el usuario pueda ingresar el texto que
 
 [![Linkedin](https://img.shields.io/badge/Linkedin-0072b1?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/afva7/)
 
-[![GitHub](https://img.shields.io/badge/patrickwebsdev-black?logo=github&logoColor=FFFFFF&style=for-the-badge)](https://github.com/AFVA7)
+[![GitHub](https://img.shields.io/badge/AFVA-black?logo=github&logoColor=FFFFFF&style=for-the-badge)](https://github.com/AFVA7)
