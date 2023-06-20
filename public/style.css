@@ -123,7 +123,69 @@ main{
     margin-left: 10px;
     margin-right: 10px;
   }
-  
+
+  @media screen and (max-width:480px){
+    .logo{
+        width: 30%;
+    }
+    main{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .mensaje{
+        align-items: center;
+        margin: 20px auto;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text-area{
+        display: flex;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .botones{
+        /*poner mas abajo para que no quede pegado a info*/
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin-left: 0px;
+        margin-top: 20px;
+        gap: 10px;
+        margin: 0 auto;
+        
+    }
+    .btn-encriptar{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .btn-desencriptar{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .btn-copiar{
+        position: relative;
+        margin-left: 80px;
+        width: 60%;
+        margin-top: 20px;
+        margin-top: 400px;
+        
+    }
+    .info{
+        top: -20px;
+        position: relative;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .developer{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
 /*svg {
     width: 100%;
     display: block;
