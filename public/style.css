@@ -1,41 +1,79 @@
+/* estableciendo variables en css */
+:root{
+    --color-blue: #0A3871;
+}
 *{
-    background:  #F3F5FC;
+    
     font-family: 'Inter';
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
 }
 
+body{
+    background:  #F3F5FC;
+}
+
+.header{
+    width: 90%;
+    margin: auto;   
+}
+
 .logo{
-    padding-top: 10px;
+    margin-top: 40px;
+    /* padding-top: 10px;
     margin-left: 10px;
-    width: 8%;
+    width: 8%; */
 }
 
 main{
+    width: 80.5%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 91px -72px);
+    align-items: end;
+}
+
+.left{
+    height: 85%;
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text-area{
+    width: 80%;
     border: none;
-    color: #0A3871;
-    margin-top: 90px;
+    resize: none;
+    background: none;
+    outline: none;
+    color: var(--color-blue);
     text-transform: lowercase; 
 }
 
 ::placeholder{
     color: #0A3871;
 }
-.text-area:focus{
+/* .text-area:focus{
     outline: none;
+} */
+
+.right{
+    background: white;
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
 }
 
-.mensaje{
-    background: white;
-    background-image: url(assets/Muñeco.png);
-    background-repeat: no-repeat;
+
+/* .mensaje{
     border: none;
     border-radius: 24px;
     color: #0A3871;
@@ -45,45 +83,67 @@ main{
     position: absolute;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
+} */
+
+.right.ajustar{
+    justify-content: space-between;
+}
+
+.munheco{
+    width: 100%;
+}
+
+.mesaje-right1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mesaje-right1.ajustar{
+    height: 80%;
+}
+
+.mesaje-right2{
+    text-align: center;
+    font-size: 16px;
+    color: #495057;
 }
 
 .botones{
     display: flex;
-    margin-top: 34px;
+    gap: 24px;
+    margin-top: 16px;
+    flex: wrap;
+}
+
+.btn-encriptar, .btn-desencriptar, .btn-copiar{
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+
 }
 
 .btn-encriptar{
-    background: #0A3871;
+    background: var(--color-blue);
     border: 1px solid #0A3871;
-    border-radius: 24px;
     color: white;
-    cursor: pointer;
-    height: 67px;
-    width: 328px;
-
 }
 
-.btn-desencriptar{
+.btn-desencriptar, .btn-copiar{
     background: #d8Dfe8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
+    border: 1px solid #0A3871; 
     color: #0A3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
 }
 
 .btn-copiar{
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: #0A3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 112px;
-    margin-top: 400px;
-    position: absolute;
-    width: 336px;
+    width: 100%;
+    background: transparent; 
+}
+
+.oculto{
+    display: none;
 }
 
 .informacion{
@@ -97,7 +157,6 @@ main{
     align-items: center;
     padding: 0px;
     gap: 8px;
-    position: absolute;
     width: 310px;
     height: 18px; 
 
@@ -109,13 +168,6 @@ main{
     justify-content: center;
 }
 
-/* h3{
-    font-size: 1em;
-    font-weight: inherit;
-    font-style: inherit;
-    text-decoration: none;
-    color: inherit;
-} */
 .developer svg {
     width: 20px; 
     height: 20px; 
@@ -123,73 +175,40 @@ main{
     margin-right: 10px;
   }
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width: 770px){
     .logo{
         width: 30%;
     }
     main{
-        flex-direction: column;
-        margin-left: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
     }
-    .mensaje{
-        align-items: center;
-        margin: 20px auto;
-        background-image: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .text-area{
-        display: flex;
-        margin-top: 0px;
-        width: 100%;
+    .right{
+        height: 100%;
     }
     .botones{
-        /*poner mas abajo para que no quede pegado a info*/
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 60%;
-        margin-left: 0px;
-        margin-top: 20px;
-        gap: 10px;
-        margin: 0 auto;
-        
+       justify-content: center;
     }
-    .btn-encriptar{
-        margin-left: 0px;
-        width: 100%;
+    .btn-encriptar,  .btn-desencriptar{
+        width: 45%;
     }
-    .btn-desencriptar{
-        margin-left: 0px;
-        width: 100%;
-    }
-
-    .btn-copiar{
-        position: relative;
-        margin-left: 80px;
-        width: 60%;
-        margin-top: 20px;
-        margin-top: 400px;
-        
-    }
-    .info{
-        top: -20px;
-        position: relative;
+    /* .developer{
+        position: absolute;
         width: 100%;
         margin-left: 0px;
         margin-top: 20px;
+    } */
+}
+@media screen and (max-width: 500px){
+    main{
+        margin: auto 16px;
     }
-    .developer{
+    .btn-encriptar,  .btn-desencriptar{
+        max-width: none;
         width: 100%;
-        margin-left: 0px;
-        margin-top: 20px;
     }
 }
-/*svg {
-    width: 100%;
-    display: block;
-    fill: currentColor;
-    * {
-        fill: currentColor;
-    }
-}*/
