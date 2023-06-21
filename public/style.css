@@ -4,10 +4,10 @@
 }
 *{
     
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 32px;
-    line-height: 150%;
+    /* line-height: 150%; */
 }
 
 body{
@@ -53,7 +53,7 @@ main{
 }
 
 ::placeholder{
-    color: #0A3871;
+    color: var(--color-blue);
 }
 /* .text-area:focus{
     outline: none;
@@ -70,9 +70,20 @@ main{
     justify-content: center;
     gap: 32px;
     align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 
+.right.ajustar {
+    justify-content: space-between;
+}
+
+.munheco{
+    width: 100%;
+}
+.oculto{
+    display: none;
+}
 /* .mensaje{
     border: none;
     border-radius: 24px;
@@ -85,25 +96,28 @@ main{
     box-sizing: border-box;
 } */
 
-.right.ajustar{
-    justify-content: space-between;
-}
 
-.munheco{
-    width: 100%;
-}
-
-.mesaje-right1{
+.mensaje{
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
     text-align: center;
     font-weight: bold;
     font-size: 24px;
 }
 
-.mesaje-right1.ajustar{
+.mensaje::placeholder{
+    color: black
+}
+
+.mensaje.ajustar{
+    text-align: left;
+    font-weight: lighter;
     height: 80%;
 }
 
-.mesaje-right2{
+.mensaje-right2{
     text-align: center;
     font-size: 16px;
     color: #495057;
@@ -140,15 +154,12 @@ main{
 .btn-copiar{
     width: 100%;
     background: transparent; 
-}
-
-.oculto{
     display: none;
 }
 
 .informacion{
     color: #495057;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .info{
@@ -163,6 +174,7 @@ main{
 }
 
 .developer{
+    margin-top: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
