@@ -173,8 +173,16 @@ main{
 
 }
 
+footer{
+  text-align: center;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  width: 100%;
+}
+
 .developer{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -208,14 +216,11 @@ main{
     .btn-encriptar,  .btn-desencriptar{
         width: 45%;
     }
-    /* .developer{
-        position: absolute;
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 20px;
-    } */
+
+
+    
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     main{
         margin: auto 16px;
     }
@@ -223,4 +228,27 @@ main{
         max-width: none;
         width: 100%;
     }
+    /* footer {
+        position: fixed;
+    } */
+    /* Estilos para el contenedor principal */
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Estilos para el main */
+
+  main {
+    margin-bottom: 0;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
 }
