@@ -174,6 +174,7 @@ main{
 }
 
 footer{
+  position: absolute;
   text-align: center;
   bottom: 15%;
   left: 0;
@@ -233,7 +234,7 @@ footer{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+    }
 
   main {
     margin-bottom: 0;
