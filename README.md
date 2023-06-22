@@ -3,7 +3,7 @@
 <div align="center"><img src="https://github.com/AFVA7/Challenge-ONE-Encriptador/blob/main/public/assets/oracle.png?raw=true" width="200"/></div>
 
 # 🚀 Challenge Encriptador | Oracle + Alura
-<a href="https://afva7.github.io/Challenge-ONE-Encriptador/public">
+<a href="https://afva7.github.io/Challenge-ONE-Encriptador">
     <p align="center">
         <img src="https://github.com/AFVA7/Challenge-ONE-Encriptador/blob/main/public/assets/Captura-del-proyecto.png?raw=true">
     </p>
