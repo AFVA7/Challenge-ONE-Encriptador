@@ -8,6 +8,8 @@
     font-weight: 400;
     font-size: 32px;
     /* line-height: 150%; */
+    box-sizing: border-box;
+    
 }
 
 body{
@@ -172,6 +174,7 @@ main{
     height: 18px; 
 
 }
+
 footer{
     display: flex;
     justify-content: center;
@@ -239,7 +242,7 @@ footer{
   main {
     margin-bottom: 0;
   }
-  
+
   footer {
     position: fixed;
     bottom: 0;
